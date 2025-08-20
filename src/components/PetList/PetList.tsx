@@ -1,7 +1,7 @@
 import {usePet} from "../../hooks/usePet.ts";
 import {useEffect} from "react";
 import toast from "react-hot-toast";
-import PetCard from "../../PetCard.tsx";
+import PetCard from "./PetCard.tsx";
 
 export default function PetList() {
     const {pets, setPets} = usePet();
