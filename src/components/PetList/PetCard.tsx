@@ -9,7 +9,7 @@ export default function PetCard({pet}: PetCardProps) {
     const navigate = useNavigate();
 
     return (
-        <div key={pet.id} className="card bg-base-100 w-96 shadow-sm">
+        <div key={pet.id} className="card bg-base-100 w-96 h-96 shadow-sm">
             <figure>
                 <img
                     src={pet.imgurl}
