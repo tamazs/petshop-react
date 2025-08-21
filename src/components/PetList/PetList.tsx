@@ -15,7 +15,7 @@ export default function PetList() {
                 })
                     .catch(() => toast.error("Error getting pets!"));
             })
-    }, []);
+    }, [setPets]);
 
     return (
         <div className='flex flex-row flex-wrap justify-around items-center p-4'>

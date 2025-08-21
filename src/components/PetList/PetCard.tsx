@@ -18,7 +18,7 @@ export default function PetCard({pet}: PetCardProps) {
             <div className="card-body">
                 <h2 className="card-title">
                     {pet.name}
-                    <div className="badge badge-secondary">NEW</div>
+                    {pet.sold ? <div className="badge badge-error">SOLD</div> : null}
                 </h2>
                 <div className="card-actions gap-4 items-center justify-end">
                     <div className="badge badge-outline">{pet.breed}</div>
